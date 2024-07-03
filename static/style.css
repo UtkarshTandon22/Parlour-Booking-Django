@@ -1,0 +1,725 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #21211a;
+}
+
+a:hover {
+    color: hsl(208, 56%, 31%);
+}
+
+button {
+    background-color: #8c0dd0;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(241, 233, 238, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 5px 3px;
+    width: 100%;
+    position: fixed; /* Makes the header fixed at the top */
+    top: 0; /* Aligns it to the top of the page */
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligns logo to the left and navbar to the right */
+    align-items: center;
+}
+
+.logo {
+    float: left; /* Floats the logo to the left */
+    
+}
+.logo-img {
+    width: 20px;
+    height: 100; /* Adjust the height of the logo */
+}
+.navbar {
+    margin-left: auto; /* Pushes the navbar to the right */
+}
+
+.navbar li {
+    display: inline-block; /* Displays navbar items in a horizontal line */
+    margin-right: 20px; /* Adds spacing between navbar items */
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Removes right margin from the last navbar item */
+}
+
+.navbar a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #060404e0;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px ;
+}
+
+.navbar a:hover {
+  background-color: #b23d6c;
+  color: #fff;
+}
+/* Hero Section */
+#home {
+  background: url('https://images.squarespace-cdn.com/content/v1/52e0235ee4b06ba19ad52758/1586201991305-YL61072LPIXIG9IUOLW0/AdobeStock_248205428.jpg') no-repeat center; 
+  /* background: url('https://st2.depositphotos.com/6708502/11129/v/600/depositphotos_111291394-stock-illustration-beautiful-silhouette-of-long-hair.jpg') no-repeat center; */
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-align: center;
+  background-color: #f0f0f0;
+  /* color: rgb(109, 196, 199); */
+}
+
+.hero-container {
+  background-color: rgba(255, 250, 238, 0.5);
+    /* background: rgba(230, 234, 236, 0.922); */
+    padding: 20px;
+    border-radius: 10px;
+    /* align-items: right; */
+    text-align: center;
+
+}
+
+/* Apply the font to the h1 element within the .hero-container */
+.hero-container h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(217, 87, 135, 0.89);
+}
+.hero-container p {
+    font-family: "Brush Script";
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(204, 87, 87, 0.845);
+    
+    color: rgb(0, 0, 0);
+}
+.hero-container button {
+  background-color: #b23d6c;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hero-container button:hover {
+    background-color: #bf759a;
+}
+
+/* About Section */
+#about {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+  background-color: #f8f9fa; /* Optional: Add a background color */
+  background-image: url('background\ 2.jpg'); /* Add your background image URL */
+  background-size: 4000px 4000px; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; 
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1500px;
+    width: 70%;
+    background-color: rgba(252, 252, 252, 0.5); /* Optional: Add a semi-transparent background for readability */
+    border-radius: 20px; /* Optional: Add rounded corners */
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    font-family: "Roboto";
+}
+.text h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  background-color: #b23d6c; /* Semi-transparent background color */
+  backdrop-filter: blur(50px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(50px); /* Safari support */
+  padding: 5px; /* Add padding inside the h2 */
+  text-align: center; /* Center text inside the h2 */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: rgb(255, 253, 253);
+  margin-bottom: 20px;  /* Text color to ensure readability */
+}
+.text p {
+    font-size: 19px; /* Adjust font size for paragraphs */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+.image {
+    flex: 1;
+    /* justify-content: center; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Align image to the right *//* align-items: right; */
+    order: 2;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+/* Add media query to adjust styles on smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+       flex-direction: column; /* Change to column layout on smaller screens */
+       padding: 10px; /* Add padding for small screens */
+    }
+    .image {
+       width: 100%;
+       justify-content: center;
+       margin-top: 10px;
+       order: 2; /* Move image below text */
+    }
+    .text {
+       width: 100%;
+       padding-right: 0; /* Remove right padding on small screens */
+       order: 1; /* Move text above image */
+    }
+}
+/* Services Section */
+#services {
+  margin-top: 5px;
+    background-color: #ffe6e6;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .service:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .service {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .service h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #943783;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .services-heading {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    background-color: #b23d6c; /* Semi-transparent background color */
+    backdrop-filter: blur(50px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(50px); /* Safari support */
+    padding: 5px; /* Add padding inside the h2 */
+    text-align: center; /* Center text inside the h2 */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    color: rgb(255, 253, 253);
+    margin-bottom: 20px;  /* add a rounded corner effect */
+  }
+  /* Responsive styles */
+@media (max-width: 1024px) {
+  .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* package section */
+/* Increase the size of the checkboxes and change their color */
+.package-block input[type="checkbox"] {
+  transform: scale(2); /* Increase the size */
+  margin-right: 10px; /* Add some spacing between checkbox and text */
+  color: #3a12b3dc;/* color: #ff0000; Change the color of the checkbox */
+}
+
+/* Style the checked checkboxes */
+.package-block input[type="checkbox"]:checked::before {
+  /* Unicode for checkmark symbol */
+  display: inline-block;
+  width: 1em;
+  font-size: 2em; /* Increase checkmark size */
+  text-align: center;
+  color: #12b322dc;
+}
+
+/* Style the unchecked checkboxes */
+
+/* Apply line-through effect to the text of unchecked checkboxes */
+.package-block input[type="checkbox"]:not(:checked) + span {
+  color: #b31212dc; /* Change color to lighter gray */
+  text-decoration: line-through; /* Add line-through effect */
+}
+#packages {
+  margin-top: 5px;
+  padding: 50px;
+  text-align: center;
+  background-color: #ffe6e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.package-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.package-block {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.package-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.text-container {
+  margin: 5px;
+}
+
+.text-container h3 {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #0f1011;
+  font-size: 30px;
+}
+
+.text-container p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.text-container ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.text-container li {
+  font-style: italic;
+  margin-bottom: 5px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* .text-container li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(223, 208, 208, 0.4);
+} */
+
+.text-container li span {
+  font-weight: bold;
+  color: #1d1f0f;
+}
+
+.stylish-heading {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  background-color: #b23d6c;/* Semi-transparent background color */
+  backdrop-filter: blur(50px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(50px); /* Safari support */
+  padding: 5px; /* Add padding inside the h2 */
+  text-align: center; /* Center text inside the h2 */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: rgb(255, 253, 253);
+  margin-bottom: 20px;   /* Add animation for a glowing effect */
+}
+
+/* @keyframes glow {
+  from {
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
+  to {
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+  }
+} */
+
+.bridal-package {
+  /* background-color: #cd81bb; */
+  background-color: #f98484d5;
+}
+
+.engagement-package {
+  /* background-color: #dc6f97d5; */
+  background-color: #cd81bb;
+}
+
+.package-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(49, 26, 222); */
+  border-radius: 10px;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.package-block:hover::before {
+  transform: scale(1);
+}
+
+/* Animation */
+.package-block {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* gallery section */
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#gallery {
+  padding: 50px ;
+  text-align: center;
+  background-color: #ffe6e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+}
+
+.gallery-grid {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.gallery-container img {
+  width: 20%; /* Display 5 images per row */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust spacing between images */
+}
+
+.navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50%; /* Make buttons circular */
+  width: 50px;
+  height: 50px;
+}
+
+.navigation-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#gallery h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  background-color: #b23d6c; /* Semi-transparent background color */
+  backdrop-filter: blur(50px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(50px); /* Safari support */
+  padding: 5px; /* Add padding inside the h2 */
+  text-align: center; /* Center text inside the h2 */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: rgb(255, 253, 253);
+  margin-bottom: 20px;  
+}
+.slideshow-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Adjust padding for button position */
+  box-sizing: border-box;
+}
+
+
+.slideshow-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0;
+  border-radius: 50%;
+  outline: none;
+}
+
+.slideshow-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#prevBtn {
+  order: 1; /* Position the previous button on the left */
+}
+
+#nextBtn {
+  order: 3; /* Position the next button on the right */
+}
+/* contact section */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#contact {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #ffe6e6;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  background-color: #b23d6c; /* Semi-transparent background color */
+  backdrop-filter: blur(50px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(50px); /* Safari support */
+  padding: 5px; /* Add padding inside the h2 */
+  text-align: center; /* Center text inside the h2 */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: rgb(255, 253, 253);
+  margin-bottom: 550px;  
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-container > div {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5e7f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .address-info h3, .opening-hours h3 {
+  font-size: 24px;
+  color: #943783;
+  margin-bottom: 20px;
+}
+
+.contact-info p, .address-info p, .opening-hours p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #23527c;
+}
+
+.social-widget {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  /* background-color: #333;
+  color: #fff; */
+  font-size: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: transparent; /* Initial background color */
+}
+.social-icon.si-facebook:hover {
+  background-color: #3172b3; /* Facebook blue */
+}
+
+.social-icon.si-instagram:hover {
+  background-color: #ef32df; /* Instagram pink */
+}
+
+.social-icon.si-youtube:hover {
+  background-color: #FF0000; /* YouTube red */
+}
+
+.social-icon.si-pinterest:hover {
+  background-color: #BD081C; /* Pinterest red */
+}
+.social-icon:hover {
+  /* background-color: #555; */
+  transform: scale(1.1);
+}
+
+.social-icon i {
+  line-height: inherit;
+}
+
+address {
+  font-style: normal;
+  color: #666;
+}
+.address-info a{
+  color: #3172b3;
+
+}
+.address-info:hover{
+  color: #23527c;
+}
+/* Footer Section */
+footer {
+  padding: 20px;
+  background-color: #b23d6c;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header .active a{
+  background-color: rgb(199, 143, 187);;
+}

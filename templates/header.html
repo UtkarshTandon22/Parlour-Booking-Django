@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumkum Beauty Parlour</title>
+    <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.GH_zsz17QSt_gKZpdi-6ZgAAAA?rs=1&pid=ImgDetMain">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://th.bing.com/th/id/OIP.GH_zsz17QSt_gKZpdi-6ZgAAAA?rs=1&pid=ImgDetMain" alt="Logo" style="height: 60px;">
+            </div>
+            <ul class="navbar">
+                
+                <li class="{% if request.path == '/home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+                <li class="{% if request.path == '/about' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
+                <li class="{% if request.path == '/services' %}active{% endif %}"><a href="{% url 'services' %}">Services</a></li>
+                <li class="{% if request.path == '/packages' %}active{% endif %}"><a href="{% url 'packages' %}">Packages</a></li>
+                <li class="{% if request.path == '/gallery' %}active{% endif %}"><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li class="{% if request.path == '/contact' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
